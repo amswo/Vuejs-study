@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>[Vue.js]</title>
+</head>
+<body>
+<div class="wrap">
+	<div id="app">
+		<h1>{{message}}</h1>
+		<input v-model="message">
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<script>
+	var data = {
+		message: 'Greetings your majesty'
+	};
+	new Vue({
+		el: '#app1',
+		data: data // Vue 생성자 옵션으로 데이터 객체 전달
+	})
+
+	new Vue({
+		el: '#app',
+		data: {
+			message: 'Greetings your majesty!' // data객체의 Vue생성자에서 직접 변수 정의
+		}
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>[Vue.js]</title>
+</head>
+<body>
+<div class="wrap">
+	<div id="app">
+		<h1>Hello <span>{{name}}</span></h1>
+		<p>Enter your name:</p>
+		<input v-model="name">
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<script>
+	new Vue({
+		el: '#app',
+		data: {
+			name: '' // data객체의 Vue생성자에서 직접 변수 정의
+		}
+	})
+</script>
+</body>
+</html>
